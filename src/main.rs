@@ -16,12 +16,20 @@ mod tests {
 
 
 
+fn fac( x: u64) -> u64
+{
+    if x > 2{
+        return x*fac (x-1);
+    }
+    x
+}
+
 
 
 fn main() {
 
     utils::foo();
-
+    println!("Hello {}",fac(3));
     
 
 }
